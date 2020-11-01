@@ -28,13 +28,4 @@
     <p> is_int( intval($_GET['id']) ) ? <?php echo (is_int( intval($_GET['id']) )) ? 'true': 'false'; ?></p>
 <?php endif; ?>
 
-<?php
-ini_set('display_errors', true);
-echo delete('auteur', 'id = %d and toto = %d', [1, 2]);
-echo "<br />";
-echo delete('auteur');
-echo "<br />";
-echo delete('livre');
-?>
-
 <?php require_once './template/footer.php'; ?>
